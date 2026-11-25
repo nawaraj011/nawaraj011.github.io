@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nawaraj Budhathoki | Computer Science Portfolio</title>
+<meta name="description" content="Portfolio of a computer science student: JavaScript, C, C++, Python, HTML, SQL and APIs.">
+<style>
+  :root{
+    --bg:#0b1020; --card:#141b34; --text:#e8ecf8; --muted:#9aa6c7;
+    --accent:#5eead4; --accent2:#818cf8; --border:#232c4d;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f8ff; --card:#ffffff; --text:#12172b; --muted:#566086; --accent:#0d9488; --accent2:#4f46e5; --border:#dde3f5; }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  nav .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--text)}
+  nav .logo img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--accent)}
+  nav ul{display:flex;gap:20px;list-style:none;font-size:.95rem}
+  nav ul a{color:var(--muted)} nav ul a:hover{color:var(--accent)}
+  header.hero{padding:90px 0 70px}
+  .hero small{color:var(--accent);font-family:ui-monospace,Menlo,Consolas,monospace}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin:10px 0}
+  .hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);max-width:620px;margin-bottom:28px;font-size:1.1rem}
+  .btn{display:inline-block;padding:11px 22px;border-radius:10px;font-weight:600;margin-right:10px;margin-bottom:8px}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b1020}
+  .btn.ghost{border:1px solid var(--border);color:var(--text)}
+  section{padding:60px 0}
+  h2{font-size:1.7rem;margin-bottom:8px}
+  h2::before{content:"// ";color:var(--accent);font-family:ui-monospace,Menlo,Consolas,monospace}
+  .sub{color:var(--muted);margin-bottom:28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;transition:transform .2s,border-color .2s}
+  .card:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .card h3{margin-bottom:6px;font-size:1.1rem}
+  .card p{color:var(--muted);font-size:.95rem}
+  .skill-head{display:flex;justify-content:space-between;font-weight:600;margin-bottom:6px}
+  .bar{height:8px;background:var(--border);border-radius:99px;overflow:hidden;margin-bottom:6px}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px;transition:width 1.2s ease}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .tags span{font-size:.78rem;padding:3px 10px;border-radius:99px;border:1px solid var(--border);color:var(--muted);font-family:ui-monospace,Menlo,Consolas,monospace}
+  .about{display:grid;gap:20px}
+  .contact a.card{display:block;color:var(--text)}
+  footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  @media(max-width:600px){nav ul{gap:12px;font-size:.85rem}}
+</style>
+</head>
+<body id="top">
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="photo.jpg" alt="Nawaraj Budhathoki"><span>Nawaraj Budhathoki</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <small>Hello, world! I am</small>
+    <h1>Nawaraj Budhathoki,<br><span>Computer Science Student</span></h1>
+    <p>I build programs, websites and tools with JavaScript, C, C++, Python, HTML, SQL and APIs. I love solving problems and learning new things.</p>
+    <a class="btn primary" href="#projects">See my projects</a>
+    <a class="btn ghost" href="#contact">Contact me</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p class="sub">A little about who I am.</p>
+    <div class="about">
+      <div class="card">
+        <p>I am a computer science student. I started with C and C++ to understand how computers really work (memory, pointers, speed). Then I learned Python for quick scripts and automation, HTML and JavaScript for the web, SQL for databases, and APIs to connect different apps together.
+
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">Languages and tools I have learned.</p>
+    <div class="grid" id="skillGrid">
+
+      <div class="card">
+        <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
+        <div class="bar"><i data-w="75"></i></div>
+        <p>Web pages, DOM, events, async code, fetch.</p>
+      </div>
+
+      <div class="card">
+        <div class="skill-head"><span>HTML &amp; CSS</span><span>85%</span></div>
+        <div class="bar"><i data-w="85"></i></div>
+        <p>Semantic pages, responsive layouts, forms.</p>
+      </div>
+
+      <div class="card">
+        <div class="skill-head"><span>Python</span><span>80%</span></div>
+        <div class="bar"><i data-w="80"></i></div>
+        <p>Scripts, automation, data, simple apps.</p>
+      </div>
+
+      <div class="card">
+        <div class="skill-head"><span>C</span><span>70%</span></div>
+        <div class="bar"><i data-w="70"></i></div>
+        <p>Pointers, arrays, memory, file handling.</p>
+      </div>
+
+      <div class="card">
+        <div class="skill-head"><span>C++</span><span>65%</span></div>
+        <div class="bar"><i data-w="65"></i></div>
+        <p>OOP, STL, data structures, algorithms.</p>
+      </div>
+
+      <div class="card">
+        <div class="skill-head"><span>SQL</span><span>70%</span></div>
+        <div class="bar"><i data-w="70"></i></div>
+        <p>SELECT, JOIN, GROUP BY, creating tables.</p>
+      </div>
+
+      <div class="card">
+        <div class="skill-head"><span>APIs</span><span>65%</span></div>
+        <div class="bar"><i data-w="65"></i></div>
+        <p>REST APIs, JSON, calling and using web services.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    
+    <div class="grid">
+
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Shows the weather of any city by calling a public weather API and showing the result on a clean web page.</p>
+        <div class="tags"><span>JavaScript</span><span>HTML</span><span>API</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Student Database</h3>
+        <p>A database to store students, courses and marks, with SQL queries for reports.</p>
+        <div class="tags"><span>SQL</span><span>Python</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Library Management</h3>
+        <p>A console program to add, search and issue books using classes and file storage.</p>
+        <div class="tags"><span>C++</span><span>OOP</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Data Structures in C</h3>
+        <p>Linked list, stack, queue and sorting algorithms written from scratch.</p>
+        <div class="tags"><span>C</span><span>Algorithms</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Automation Script</h3>
+        <p>A Python script that renames files, reads CSV data and sends a daily summary.</p>
+        <div class="tags"><span>Python</span><span>Automation</span></div>
+      </div>
+
+      <div class="card">
+        <h3>This Portfolio</h3>
+        <p>A fast, mobile-friendly personal website, hosted for free.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <h2>Contact</h2>
+    <p class="sub">Let's work together or just say hi.</p>
+    <div class="grid">
+      <a class="card" href="mailto:menawa@gmail.com"><h3>Email</h3><p>menawa@gmail.com</p></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> nawaraj011. Built with HTML, CSS and JavaScript.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const bars = document.querySelectorAll('.bar i');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.style.width = e.target.dataset.w + '%'; io.unobserve(e.target); }
+    });
+  }, {threshold: 0.4});
+  bars.forEach(b => io.observe(b));
+</script>
+</body>
+</html>
